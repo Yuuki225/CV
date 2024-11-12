@@ -1,5 +1,5 @@
-import { Header } from './components/Header'
-import { Profile } from './components/profile'
+import { Header } from './Components/Header'
+import { Profile } from './Components/profile'
 import React from 'react'
 
 const App = function app() {
