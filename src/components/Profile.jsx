@@ -1,7 +1,7 @@
 import { Card, Dropdown } from "flowbite-react";
 import picture from '../assets/mainpfp.jpg'
 
-export function Profile() {
+const Profile = () => {
   return (
     <Card className="max-w-full">
       <div className="flex justify-end px-4 pt-4">
@@ -35,3 +35,5 @@ export function Profile() {
     </Card>
   );
 }
+
+export default Profile

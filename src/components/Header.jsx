@@ -1,7 +1,7 @@
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import pp from '../assets/mainpfp.jpg'
 
-export function Header() {
+const Header = () => {
   return (
     <Navbar fluid rounded>
       <div className="flex md:order-2">
@@ -36,3 +36,6 @@ export function Header() {
     </Navbar>
   );
 }
+
+
+export default Header
