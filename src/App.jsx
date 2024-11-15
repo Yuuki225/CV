@@ -1,6 +1,5 @@
-
-import Header from "./Components/Header"
-import Profile  from "./Components/profile"
+import Header from './Components/Header'
+import Profile from './Components/Profile'
 import React from 'react'
 
 const App = function app() {
