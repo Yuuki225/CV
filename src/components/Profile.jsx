@@ -2,7 +2,7 @@ import { Card, Button } from "flowbite-react";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import picture from '../assets/mainpfp.jpg';
 
-const Portfolio = () => {
+const Profile = () => {
   return (
     <div className="max-w-5xl mx-auto p-6 space-y-12">
       {/* Profile Section */}
@@ -132,4 +132,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Profile;
