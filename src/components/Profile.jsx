@@ -4,7 +4,7 @@ import picture from '../assets/mainpfp.jpg';
 
 const Profile = () => {
   return (
-    <div className="max-w-5xl mx-auto p-6 space-y-12">
+    <div className="max-w-5xl mx-auto 222226 p-6 space-y-12">
       {/* Profile Section */}
       <section>
         <Card id="home" className="p-4 shadow-lg transition-transform hover:scale-105 hover:shadow-xl dark:bg-gray-800 dark:border-gray-700">
