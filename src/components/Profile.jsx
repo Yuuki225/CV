@@ -1,6 +1,8 @@
 import { Card, Button } from "flowbite-react";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import picture from '../assets/mainpfp.jpg';
+import ss from '../assets/e-inter.png';
+
 
 const Profile = () => {
   return (
@@ -20,7 +22,7 @@ const Profile = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://linkedin.com/in/Razwa Arqya"
+                href="https://linkedin.com/in/Razwa_arqya"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:text-blue-700 transition"
@@ -50,39 +52,62 @@ const Profile = () => {
         </p>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Projects yang pernah saya kerjakan</h2>
-        <div className="grid gap-6 md:grid-cols-2">
-          <Card className="p-4 dark:bg-gray-800 dark:border-gray-700">
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">aplikasi surat menyurat sederhana</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              pada awal nya ini adalah project dari sekolah, namun project ini kurang sesuai dengan apa yang di inginkan 
-              oleh client sehinga saya menjadikan project ini sebagain bahan pembelajaran.
-            </p>
-            <Button
-              href="https://github.com/your-repo"
-              target="_blank"
-              className="mt-4 bg-blue-500 text-white hover:bg-blue-600"
-            >
-              View Project
-            </Button>
-          </Card>
-          <Card className="p-4 dark:bg-gray-800 dark:border-gray-700">
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Project 2</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              A task management app with drag-and-drop functionality and real-time collaboration.
-            </p>
-            <Button
-              href="https://github.com/your-repo"
-              target="_blank"
-              className="mt-4 bg-blue-500 text-white hover:bg-blue-600"
-            >
-              View Project
-            </Button>
-          </Card>
-        </div>
-      </section>
+ {/* Projects Section */}
+  <section id="projects">
+    <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+      Project yang pernah saya kerjakan
+    </h2>
+    <div className="grid gap-6 lg:grid-cols-2">
+    {/* Project 1 */}
+    <Card className="p-4 dark:bg-gray-800 dark:border-gray-700 transition-transform transform hover:scale-105 hover:shadow-2xl">
+      <img
+        src={ss}
+        alt="Thumbnail of Project 1"
+        className="rounded-lg mb-4 shadow-md"
+      />
+      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">website Surat Menyurat</h3>
+      <p className="text-sm text-gray-600 dark:text-gray-400">
+        Project ini awalnya untuk tugas sekolah, kemudian saya modifikasi
+        untuk kebutuhan pembelajaran. Menggunakan PHP dan MySQL.
+      </p>
+      <div className="flex items-center justify-between mt-4">
+        <Button
+          href="https://github.com/Yuuki225/surat-menyurat.git"
+          target="_blank"
+          className="bg-blue-500 text-white hover:bg-blue-600"
+        >
+          View Project
+        </Button>
+        <span className="text-gray-500 dark:text-gray-400 text-sm">Completed</span>
+      </div>
+    </Card>
+
+    {/* Project 2 */}
+    <Card className="p-4 dark:bg-gray-800 dark:border-gray-700 transition-transform transform hover:scale-105 hover:shadow-2xl">
+      <img
+        src="https://via.placeholder.com/400x200"
+        alt="Thumbnail of Project 2"
+        className="rounded-lg mb-4 shadow-md"
+      />
+      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Task Management App</h3>
+      <p className="text-sm text-gray-600 dark:text-gray-400">
+        Aplikasi manajemen tugas dengan fitur *drag-and-drop* dan kolaborasi
+        real-time. Dibangun menggunakan React dan Firebase.
+      </p>
+      <div className="flex items-center justify-between mt-4">
+        <Button
+          href="https://github.com/your-repo"
+          target="_blank"
+          className="bg-blue-500 text-white hover:bg-blue-600"
+        >
+          View Project
+        </Button>
+        <span className="text-gray-500 dark:text-gray-400 text-sm">In Progress</span>
+      </div>
+    </Card>
+  </div>
+</section>
+
 
       {/* Skills Section */}
       <section id="skills">

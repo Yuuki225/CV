@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 html{
-    scrollbar-width: smooth;
+    scrollbar-width: smooth;    
+    scroll-behavior: smooth;
 }
