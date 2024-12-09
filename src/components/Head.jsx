@@ -2,7 +2,7 @@ import { Navbar } from "flowbite-react";
 import { FaHome, FaUser, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
 import picture from '../assets/take_your_heart.jpg';
 
-const Navbar = () => {
+const Head = () => {
   return (
     <Navbar fluid className="sticky top-0 z-50 bg-[#dde5b6]/70 backdrop-blur-md text-white py-3 shadow-lg">
       {/* Logo */}
@@ -55,4 +55,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Head;

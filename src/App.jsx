@@ -1,11 +1,11 @@
-import Navbar from './Components/Navbar'
+import Head from './Components/Head'
 import Profile from './Components/Profile'
 import React from 'react'
 
-const App = function app() {
+const App = function App() {
   return (
     <>     
-      <Navbar/>
+      <Head/>
       <Profile/>
     </>
   )
